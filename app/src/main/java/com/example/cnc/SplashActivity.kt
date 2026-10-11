@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.cnc
 
 import android.content.Intent
 import android.os.Bundle
@@ -15,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
 
             finish()

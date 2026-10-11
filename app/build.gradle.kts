@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.quizapp"
+    namespace = "com.example.cnc"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.quizapp"
+        applicationId = "com.example.cnc"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -30,6 +30,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        isCoreLibraryDesugaringEnabled = true   // java.time on minSdk 24
     }
     kotlinOptions {
         jvmTarget = "11"
@@ -40,6 +41,9 @@ android {
 }
 
 dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+    implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
 
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)

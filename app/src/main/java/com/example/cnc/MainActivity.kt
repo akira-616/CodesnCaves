@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.cnc
 
 import android.content.Intent
 import android.os.Bundle
