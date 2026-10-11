@@ -9,7 +9,7 @@ keeps a **profile with a GitHub-style activity grid**.
 - minSdk 24, compileSdk 36
 - Based on the `Phoenix1808/Jams-26` quiz app (GDG JSS). See [What changed](#what-changed-from-the-original-repo).
 
-> Not yet compiled in CI. Open in Android Studio, sync Gradle, and fix anything it flags.
+> Open in Android Studio, sync Gradle, and fix anything it flags.
 > See `docs/SETUP_GUIDE.md` for setup + Git, and `docs/DOCUMENTATION.md` for the full technical docs.
 
 ## Features
@@ -116,5 +116,5 @@ now that the splash goes to the home screen.
 ## Credits and licence
 
 Original quiz app: `Phoenix1808/Jams-26`, "© 2026 | Made by GDG JSS" (shown on the splash screen).
-The original repository has no licence file, so keep the credit and make sure you have the owner's
-permission before publishing this under your own account. Add a `LICENSE` once decided.
+Published with the owners' permission. New code in this project is released under the
+[MIT License](LICENSE).
